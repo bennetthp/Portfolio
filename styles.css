@@ -1,0 +1,188 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "atten-new", 'Trebuchet MS', sans-serif;
+  padding: 10px;
+  background: white;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #264653;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(116, 177, 110);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+/* Left column - full width */
+.leftcolumn2 {   
+  float: left;
+  width: 100%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: white;
+  padding-left: 20px;
+}
+
+
+.img {
+  width: 200px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.img-2 {
+  width: 350px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;  
+}
+.card2 {
+  background-color: rgb(116, 177, 110);
+  padding: 20px;
+  margin-top: 20px;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #264653;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+.parentContainer {
+  display: flex;
+  padding: 15px;
+}
+.flexChild1 {
+   background-color: white;
+   width: 30%;
+   padding: 10px;
+   margin: 15px;
+   color: #264653;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .flexChild2 {
+    background-color: white;
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+    color: #264653;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .flexChild3 {
+    background-color: white;
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+    color: #264653;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bryce-header1.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .cardText {
+    font-size: 14pt;
+    color: #264653;
+    text-align: center;
+  }
+  .cardImage {
+    display: block;
+  margin: 0 auto;
+  padding: 10pt;
+    width: 100%;
+    height: auto;
+  }
+  
+  .smLogos {
+    display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10pt;
+    width: 75px;
+  }
+  .alignCenter {
+    text-align: center;
+  }
+   
